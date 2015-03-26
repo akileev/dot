@@ -30,16 +30,16 @@ col6 = "#2980b9"
 col7 = "#8e44ad"
 col8 = "#16a085"
 bar1 = "dzen2 -p -ta l -e 'button3=' -fn 'Exo 2-8' -fg '" ++ col1 ++ "' -bg '" ++ col2 ++ "' -h 20 -w 750"
-bar2 = "sh /home/crucia/.xmonad/scripts/dzen_info_1.sh"
+bar2 = "sh ~//.xmonad/scripts/dzen_info_1.sh"
 bar3 = "dzen2 -p -ta l -e 'button3=' -fn 'Exo 2-8' -fg '" ++ col1 ++ "' -bg '" ++ col2 ++ "' -h 20 -w 750 -y 750 -x 60"
-bar4 = "sh /home/crucia/.xmonad/scripts/dzen_info_2.sh"
-bar5 = "sh /home/crucia/.xmonad/scripts/dzen_menu.sh"
-cal_ic = "^ca(1,xdotool key alt+space)^i(/home/crucia/.xmonad/icons/"
+bar4 = "sh ~//.xmonad/scripts/dzen_info_2.sh"
+bar5 = "sh ~//.xmonad/scripts/dzen_menu.sh"
+cal_ic = "^ca(1,xdotool key alt+space)^i(~//.xmonad/icons/"
 vtitle = "^bg(" ++ col8 ++ ")    "
 vtitle_end = "    ^bg()"
 
 startup = do
-		spawnOnce "sh /home/crucia/.xmonad/scripts/autostart.sh"
+		spawnOnce "sh ~//.xmonad/scripts/autostart.sh"
 
 myLogHook h = do
 		dynamicLogWithPP $ tryPP h

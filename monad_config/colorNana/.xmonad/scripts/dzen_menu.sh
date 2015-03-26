@@ -16,7 +16,7 @@ Font="Exo 2-8"
 Title="Menu"
 BG=#C0392B
 FG=#fcfcfc
-IconTitle="/home/crucia/.xmonad/icons/menu.xbm"
+IconTitle="~//.xmonad/icons/menu.xbm"
 (echo "^ro(0)^ib(1)  ^i($IconTitle) $Title" ;echo -e "\
 \n^ca(1,$Exec1)^r(0)  $Nama1 ^pa(117)^r(0)^ca()\
 \n^ca(1,$Exec2)^r(0)  $Nama2 ^pa(117)^r(0)^ca()\
