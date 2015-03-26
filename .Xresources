@@ -7,7 +7,7 @@ Xft.rgba:       rgb
 
 ! Black
 *color0:           #2B2B2B
-*color8:           #252525
+*color8:           #bdc3c7
 ! Red
 *color1:           #F33C5B
 *color9:           #F33C5B
@@ -31,8 +31,8 @@ Xft.rgba:       rgb
 *color15:          #bdc3c7
 
 URxvt*geometry:         83x23
-URxvt*font: xft:PragmataPro for Powerline:size=7
-URxvt*boldFont: xft:PragmataPro for Powerline:size=7
+URxvt*font: xft:DejaVu Sans Mono:size=9
+URxvt*boldFont: xft:DejaVu Sans Mono:size=9
 URxvt*urlLauncher:         chrome
 URxvt*scrollBar:        false
 URxvt.iconFile: /usr/share/icons/Flattr/apps/scalable/utilities-terminal.svg
