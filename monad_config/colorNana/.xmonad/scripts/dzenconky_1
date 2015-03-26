@@ -6,12 +6,12 @@ total_run_times 0
 use_spacer none
  
 TEXT
-^bg(\#16a085)   ^i(/home/crucia/.xmonad/icons/cpu.xbm)   \
+^bg(\#16a085)   ^i(~/.xmonad/icons/cpu.xbm)   \
 ${cpu cpu0}% ${cpu cpu1}%   \
-^bg(\#f39c12)   ^i(/home/crucia/.xmonad/icons/mem.xbm)   \
+^bg(\#f39c12)   ^i(~/.xmonad/icons/mem.xbm)   \
 ${mem}   \
-^bg(\#8e44ad)   ^i(/home/crucia/.xmonad/icons/uptime.xbm)   \
+^bg(\#8e44ad)   ^i(~/.xmonad/icons/uptime.xbm)   \
 $uptime_short   \
-^bg(\#27ae60)   ^i(/home/crucia/.xmonad/icons/clock.xbm)   \
+^bg(\#27ae60)   ^i(~/.xmonad/icons/clock.xbm)   \
 ${time %a, %d %b %R %p}   \
-^ca(1,oblogout)^bg(\#C0392B)^fg()   ^i(/home/crucia/.xmonad/icons/user.xbm)  Crucia   ^ca()
+^ca(1,oblogout)^bg(\#C0392B)^fg()   ^i(~/.xmonad/icons/user.xbm)  Crucia   ^ca()
