@@ -11,12 +11,18 @@ Nama5="Change Wallpaper"
 Exec5="nitrogen"
 Nama6="Power Menu"
 Exec6="oblogout"
-Y=768
 Font="Exo 2-8"
 Title="Menu"
 BG=#C0392B
 FG=#fcfcfc
 IconTitle="~/.xmonad/icons/menu.xbm"
+
+screenWidth=$(xrandr -q | grep '*' | awk '{print $1}' | cut -d 'x' -f1)
+screenHeight=$(xrandr -q | grep '*' | awk '{print $1}' | cut -d 'x' -f2)
+
+barHeight=20
+let Y=$screenHeight-$barHeight
+
 (echo "^ro(0)^ib(1)  ^i($IconTitle) $Title" ;echo -e "\
 \n^ca(1,$Exec1)^r(0)  $Nama1 ^pa(117)^r(0)^ca()\
 \n^ca(1,$Exec2)^r(0)  $Nama2 ^pa(117)^r(0)^ca()\
@@ -24,4 +30,4 @@ IconTitle="~/.xmonad/icons/menu.xbm"
 \n^ca(1,$Exec4)^r(0)  $Nama4 ^pa(117)^r(0)^ca()\
 \n^ca(1,$Exec5)^r(0)  $Nama5 ^pa(117)^r(0)^ca()\
 \n^ca(1,$Exec6)^r(0)  $Nama6 ^pa(117)^r(0)^ca()")\
-| dzen2 -y "$Y" -fn "$Font" -bg "$BG" -fg "$FG" -l 6 -tw 60 -ta l -w 120 -h 20 -m -p -e 'entertitle=;enterslave=grabkeys;leaveslave=collapse,ungrabkeys;button1=uncollapse,grabkeys;button2=togglestick;button3=;button4=scrollup;button5=scrolldown;key_Escape=ungrabkeys'
+| dzen2 -y "$Y" -fn "$Font" -bg "$BG" -fg "$FG" -l 6 -tw 60 -ta l -w 120 -h $barHeight -m -p -e 'entertitle=;enterslave=grabkeys;leaveslave=collapse,ungrabkeys;button1=uncollapse,grabkeys;button2=togglestick;button3=;button4=scrollup;button5=scrolldown;key_Escape=ungrabkeys'
